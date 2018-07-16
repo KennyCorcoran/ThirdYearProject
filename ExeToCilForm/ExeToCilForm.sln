@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExeToCilForm", "ExeToCilForm\ExeToCilForm.csproj", "{CAF15200-82DA-4D0A-A6DE-5570BA9AA408}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAF15200-82DA-4D0A-A6DE-5570BA9AA408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF15200-82DA-4D0A-A6DE-5570BA9AA408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF15200-82DA-4D0A-A6DE-5570BA9AA408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF15200-82DA-4D0A-A6DE-5570BA9AA408}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ABC5905-53F8-49AA-BA9D-C55F6CA19863}
+	EndGlobalSection
+EndGlobal
