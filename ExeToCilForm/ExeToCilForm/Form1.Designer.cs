@@ -41,7 +41,7 @@
             // 
             this.exeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exeTextBox.Location = new System.Drawing.Point(126, 238);
-            this.exeTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.exeTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.exeTextBox.Name = "exeTextBox";
             this.exeTextBox.Size = new System.Drawing.Size(352, 44);
             this.exeTextBox.TabIndex = 0;
@@ -65,7 +65,7 @@
             this.browseButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.browseButton.ForeColor = System.Drawing.Color.Black;
             this.browseButton.Location = new System.Drawing.Point(494, 238);
-            this.browseButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.browseButton.Margin = new System.Windows.Forms.Padding(6);
             this.browseButton.Name = "browseButton";
             this.browseButton.Size = new System.Drawing.Size(194, 50);
             this.browseButton.TabIndex = 2;
@@ -82,7 +82,7 @@
             this.mainPanel.Controls.Add(this.exeTextBox);
             this.mainPanel.Controls.Add(this.label1);
             this.mainPanel.Location = new System.Drawing.Point(24, 23);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(6);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(814, 683);
             this.mainPanel.TabIndex = 3;
@@ -94,7 +94,7 @@
             this.closeButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeButton.ForeColor = System.Drawing.Color.Black;
             this.closeButton.Location = new System.Drawing.Point(126, 431);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(6);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(278, 50);
             this.closeButton.TabIndex = 4;
@@ -109,7 +109,7 @@
             this.convertButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convertButton.ForeColor = System.Drawing.Color.Black;
             this.convertButton.Location = new System.Drawing.Point(420, 431);
-            this.convertButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.convertButton.Margin = new System.Windows.Forms.Padding(6);
             this.convertButton.Name = "convertButton";
             this.convertButton.Size = new System.Drawing.Size(268, 50);
             this.convertButton.TabIndex = 3;
@@ -125,9 +125,10 @@
             this.ClientSize = new System.Drawing.Size(866, 727);
             this.Controls.Add(this.mainPanel);
             this.ForeColor = System.Drawing.Color.White;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "EXE Converter";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
             this.ResumeLayout(false);

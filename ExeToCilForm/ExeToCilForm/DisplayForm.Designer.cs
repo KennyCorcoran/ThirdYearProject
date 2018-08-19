@@ -55,10 +55,10 @@
             this.panel1.Controls.Add(this.convertToReadableButton);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(16, 54);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(24, 84);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1267, 684);
+            this.panel1.Size = new System.Drawing.Size(1898, 1068);
             this.panel1.TabIndex = 0;
             // 
             // goBackButton
@@ -67,10 +67,10 @@
             this.goBackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goBackButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goBackButton.ForeColor = System.Drawing.Color.Black;
-            this.goBackButton.Location = new System.Drawing.Point(6, 646);
-            this.goBackButton.Margin = new System.Windows.Forms.Padding(4);
+            this.goBackButton.Location = new System.Drawing.Point(9, 1009);
+            this.goBackButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.goBackButton.Name = "goBackButton";
-            this.goBackButton.Size = new System.Drawing.Size(129, 32);
+            this.goBackButton.Size = new System.Drawing.Size(194, 50);
             this.goBackButton.TabIndex = 9;
             this.goBackButton.Text = "Go Back";
             this.goBackButton.UseVisualStyleBackColor = false;
@@ -82,10 +82,10 @@
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeButton.ForeColor = System.Drawing.Color.Black;
-            this.closeButton.Location = new System.Drawing.Point(1131, 648);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.closeButton.Location = new System.Drawing.Point(1696, 1012);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(129, 32);
+            this.closeButton.Size = new System.Drawing.Size(194, 50);
             this.closeButton.TabIndex = 8;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = false;
@@ -97,10 +97,10 @@
             this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.Black;
-            this.clearButton.Location = new System.Drawing.Point(700, 648);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(4);
+            this.clearButton.Location = new System.Drawing.Point(1050, 1012);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(129, 32);
+            this.clearButton.Size = new System.Drawing.Size(194, 50);
             this.clearButton.TabIndex = 7;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = false;
@@ -112,10 +112,10 @@
             this.convertToReadableButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.convertToReadableButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convertToReadableButton.ForeColor = System.Drawing.Color.Black;
-            this.convertToReadableButton.Location = new System.Drawing.Point(448, 648);
-            this.convertToReadableButton.Margin = new System.Windows.Forms.Padding(4);
+            this.convertToReadableButton.Location = new System.Drawing.Point(672, 1012);
+            this.convertToReadableButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.convertToReadableButton.Name = "convertToReadableButton";
-            this.convertToReadableButton.Size = new System.Drawing.Size(129, 32);
+            this.convertToReadableButton.Size = new System.Drawing.Size(194, 50);
             this.convertToReadableButton.TabIndex = 4;
             this.convertToReadableButton.Text = "Convert";
             this.convertToReadableButton.UseVisualStyleBackColor = false;
@@ -127,30 +127,30 @@
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.Controls.Add(this.richTextBox1);
             this.panel2.Controls.Add(this.CilLabel);
-            this.panel2.Location = new System.Drawing.Point(4, 16);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(6, 25);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(575, 626);
+            this.panel2.Size = new System.Drawing.Size(860, 975);
             this.panel2.TabIndex = 5;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(2, 31);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox1.Location = new System.Drawing.Point(3, 48);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(571, 593);
+            this.richTextBox1.Size = new System.Drawing.Size(854, 924);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
+            this.richTextBox1.WordWrap = false;
             // 
             // CilLabel
             // 
             this.CilLabel.AutoSize = true;
             this.CilLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CilLabel.ForeColor = System.Drawing.Color.White;
-            this.CilLabel.Location = new System.Drawing.Point(68, 0);
-            this.CilLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CilLabel.Location = new System.Drawing.Point(102, 0);
+            this.CilLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.CilLabel.Name = "CilLabel";
-            this.CilLabel.Size = new System.Drawing.Size(412, 29);
+            this.CilLabel.Size = new System.Drawing.Size(656, 46);
             this.CilLabel.TabIndex = 2;
             this.CilLabel.Text = "Common Intermediate Language";
             // 
@@ -160,30 +160,31 @@
             this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel3.Controls.Add(this.outputRichTextBox);
             this.panel3.Controls.Add(this.readableLabel);
-            this.panel3.Location = new System.Drawing.Point(696, 16);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(1044, 25);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(567, 628);
+            this.panel3.Size = new System.Drawing.Size(848, 978);
             this.panel3.TabIndex = 6;
             // 
             // outputRichTextBox
             // 
-            this.outputRichTextBox.Location = new System.Drawing.Point(4, 29);
-            this.outputRichTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.outputRichTextBox.Location = new System.Drawing.Point(6, 45);
+            this.outputRichTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.outputRichTextBox.Name = "outputRichTextBox";
-            this.outputRichTextBox.Size = new System.Drawing.Size(559, 595);
+            this.outputRichTextBox.Size = new System.Drawing.Size(836, 927);
             this.outputRichTextBox.TabIndex = 1;
             this.outputRichTextBox.Text = "";
+            this.outputRichTextBox.WordWrap = false;
             // 
             // readableLabel
             // 
             this.readableLabel.AutoSize = true;
             this.readableLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.readableLabel.ForeColor = System.Drawing.Color.White;
-            this.readableLabel.Location = new System.Drawing.Point(160, 0);
-            this.readableLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.readableLabel.Location = new System.Drawing.Point(240, 0);
+            this.readableLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.readableLabel.Name = "readableLabel";
-            this.readableLabel.Size = new System.Drawing.Size(238, 29);
+            this.readableLabel.Size = new System.Drawing.Size(379, 46);
             this.readableLabel.TabIndex = 3;
             this.readableLabel.Text = "Interpreter Output";
             // 
@@ -192,24 +193,24 @@
             this.headerLabel.AutoSize = true;
             this.headerLabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLabel.ForeColor = System.Drawing.Color.White;
-            this.headerLabel.Location = new System.Drawing.Point(431, 11);
-            this.headerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.headerLabel.Location = new System.Drawing.Point(646, 17);
+            this.headerLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(428, 34);
+            this.headerLabel.Size = new System.Drawing.Size(683, 55);
             this.headerLabel.TabIndex = 4;
             this.headerLabel.Text = "Convert CIL to readable text";
             // 
             // DisplayForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1310, 756);
+            this.ClientSize = new System.Drawing.Size(1965, 1181);
             this.Controls.Add(this.headerLabel);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "DisplayForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DisplayForm";

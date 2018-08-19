@@ -93,5 +93,10 @@ namespace ExeToCilForm
             // Suspend the screen.  
             return list;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
