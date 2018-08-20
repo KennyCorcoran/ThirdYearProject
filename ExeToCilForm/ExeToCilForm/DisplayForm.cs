@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace ExeToCilForm
@@ -781,6 +782,43 @@ namespace ExeToCilForm
 
                  return valueDescript;
             }
+
+        private void exportBothButton_Click(object sender, EventArgs e)
+        {
+
+            if (outputRichTextBox.Text != String.Empty)
+            {
+                TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\both.txt");
+
+                for (int n = 0; n < richTextBox1.Lines.Length; ++n)
+                {
+                    writer.WriteLine(richTextBox1.Lines[n]);
+                }
+
+                for (int n = 0; n < outputRichTextBox.Lines.Length; ++n)
+                {
+                    writer.WriteLine(outputRichTextBox.Lines[n]);
+                }
+
+                writer.Close();
+            }
+            else
+            {
+                MessageBox.Show("Output Textbox is Empty!!", "Error", MessageBoxButtons.OK);
+            }
+        }
+
+        private void exportButton_Click(object sender, EventArgs e)
+        {
+            TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\.txt");
+
+            for (int n = 0; n < outputRichTextBox.Lines.Length; ++n)
+            {
+                writer.WriteLine(outputRichTextBox.Lines[n]);
+            }
+            
+            writer.Close();
+        }
     }
 }
 

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.exportBothButton = new System.Windows.Forms.Button();
+            this.exportButton = new System.Windows.Forms.Button();
             this.goBackButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
@@ -49,6 +51,8 @@
             // 
             this.panel1.AutoSize = true;
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Controls.Add(this.exportBothButton);
+            this.panel1.Controls.Add(this.exportButton);
             this.panel1.Controls.Add(this.goBackButton);
             this.panel1.Controls.Add(this.closeButton);
             this.panel1.Controls.Add(this.clearButton);
@@ -56,10 +60,40 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(24, 84);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1898, 1068);
             this.panel1.TabIndex = 0;
+            // 
+            // exportBothButton
+            // 
+            this.exportBothButton.BackColor = System.Drawing.Color.White;
+            this.exportBothButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportBothButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportBothButton.ForeColor = System.Drawing.Color.Black;
+            this.exportBothButton.Location = new System.Drawing.Point(320, 1012);
+            this.exportBothButton.Margin = new System.Windows.Forms.Padding(6);
+            this.exportBothButton.Name = "exportBothButton";
+            this.exportBothButton.Size = new System.Drawing.Size(213, 50);
+            this.exportBothButton.TabIndex = 11;
+            this.exportBothButton.Text = "Export Both";
+            this.exportBothButton.UseVisualStyleBackColor = false;
+            this.exportBothButton.Click += new System.EventHandler(this.exportBothButton_Click);
+            // 
+            // exportButton
+            // 
+            this.exportButton.BackColor = System.Drawing.Color.White;
+            this.exportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exportButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exportButton.ForeColor = System.Drawing.Color.Black;
+            this.exportButton.Location = new System.Drawing.Point(1386, 1012);
+            this.exportButton.Margin = new System.Windows.Forms.Padding(6);
+            this.exportButton.Name = "exportButton";
+            this.exportButton.Size = new System.Drawing.Size(194, 50);
+            this.exportButton.TabIndex = 10;
+            this.exportButton.Text = "Export";
+            this.exportButton.UseVisualStyleBackColor = false;
+            this.exportButton.Click += new System.EventHandler(this.exportButton_Click);
             // 
             // goBackButton
             // 
@@ -67,8 +101,8 @@
             this.goBackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goBackButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goBackButton.ForeColor = System.Drawing.Color.Black;
-            this.goBackButton.Location = new System.Drawing.Point(9, 1009);
-            this.goBackButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.goBackButton.Location = new System.Drawing.Point(6, 1012);
+            this.goBackButton.Margin = new System.Windows.Forms.Padding(6);
             this.goBackButton.Name = "goBackButton";
             this.goBackButton.Size = new System.Drawing.Size(194, 50);
             this.goBackButton.TabIndex = 9;
@@ -82,8 +116,8 @@
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeButton.ForeColor = System.Drawing.Color.Black;
-            this.closeButton.Location = new System.Drawing.Point(1696, 1012);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.closeButton.Location = new System.Drawing.Point(1692, 1012);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(6);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(194, 50);
             this.closeButton.TabIndex = 8;
@@ -98,7 +132,7 @@
             this.clearButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearButton.ForeColor = System.Drawing.Color.Black;
             this.clearButton.Location = new System.Drawing.Point(1050, 1012);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(6);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(194, 50);
             this.clearButton.TabIndex = 7;
@@ -112,8 +146,8 @@
             this.convertToReadableButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.convertToReadableButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.convertToReadableButton.ForeColor = System.Drawing.Color.Black;
-            this.convertToReadableButton.Location = new System.Drawing.Point(672, 1012);
-            this.convertToReadableButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.convertToReadableButton.Location = new System.Drawing.Point(669, 1012);
+            this.convertToReadableButton.Margin = new System.Windows.Forms.Padding(6);
             this.convertToReadableButton.Name = "convertToReadableButton";
             this.convertToReadableButton.Size = new System.Drawing.Size(194, 50);
             this.convertToReadableButton.TabIndex = 4;
@@ -128,7 +162,7 @@
             this.panel2.Controls.Add(this.richTextBox1);
             this.panel2.Controls.Add(this.CilLabel);
             this.panel2.Location = new System.Drawing.Point(6, 25);
-            this.panel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(860, 975);
             this.panel2.TabIndex = 5;
@@ -161,7 +195,7 @@
             this.panel3.Controls.Add(this.outputRichTextBox);
             this.panel3.Controls.Add(this.readableLabel);
             this.panel3.Location = new System.Drawing.Point(1044, 25);
-            this.panel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(848, 978);
             this.panel3.TabIndex = 6;
@@ -169,7 +203,7 @@
             // outputRichTextBox
             // 
             this.outputRichTextBox.Location = new System.Drawing.Point(6, 45);
-            this.outputRichTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.outputRichTextBox.Margin = new System.Windows.Forms.Padding(6);
             this.outputRichTextBox.Name = "outputRichTextBox";
             this.outputRichTextBox.Size = new System.Drawing.Size(836, 927);
             this.outputRichTextBox.TabIndex = 1;
@@ -210,7 +244,7 @@
             this.ClientSize = new System.Drawing.Size(1965, 1181);
             this.Controls.Add(this.headerLabel);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "DisplayForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DisplayForm";
@@ -239,5 +273,7 @@
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button goBackButton;
+        private System.Windows.Forms.Button exportBothButton;
+        private System.Windows.Forms.Button exportButton;
     }
 }
