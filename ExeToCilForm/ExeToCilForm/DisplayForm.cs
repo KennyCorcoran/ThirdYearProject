@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace ExeToCilForm
 {
@@ -783,12 +784,15 @@ namespace ExeToCilForm
                  return valueDescript;
             }
 
+        //Export Button that saves all info from the two textboxes into a txt file
         private void exportBothButton_Click(object sender, EventArgs e)
         {
 
             if (outputRichTextBox.Text != String.Empty)
             {
-                TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\both.txt");
+                string fileName = Interaction.InputBox("Save File", "Name the File", "", -1, -1);
+
+                TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\" + fileName + ".txt");
 
                 for (int n = 0; n < richTextBox1.Lines.Length; ++n)
                 {
@@ -808,17 +812,28 @@ namespace ExeToCilForm
             }
         }
 
+        //Export Button that saves all info of the converted file into a txt file
         private void exportButton_Click(object sender, EventArgs e)
         {
-            TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\.txt");
-
-            for (int n = 0; n < outputRichTextBox.Lines.Length; ++n)
+            if (outputRichTextBox.Text != String.Empty)
             {
-                writer.WriteLine(outputRichTextBox.Lines[n]);
+                string fileName = Interaction.InputBox("Save File", "Name the File", "", -1, -1);
+
+                TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\" + fileName + ".txt");
+
+                for (int n = 0; n < outputRichTextBox.Lines.Length; ++n)
+                {
+                    writer.WriteLine(outputRichTextBox.Lines[n]);
+                }
+
+                writer.Close();
             }
-            
-            writer.Close();
+            else
+            {
+                MessageBox.Show("Output Textbox is Empty!!", "Error", MessageBoxButtons.OK);
+            }
         }
+        
     }
 }
 
