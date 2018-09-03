@@ -790,26 +790,36 @@ namespace ExeToCilForm
 
             if (outputRichTextBox.Text != String.Empty)
             {
-                string fileName = Interaction.InputBox("Save File", "Name the File", "", -1, -1);
+                    SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                    saveFileDialog1.InitialDirectory = @"C:\";
+                    saveFileDialog1.Title = "Save text Files";
+                    saveFileDialog1.DefaultExt = "txt";
+                    saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
 
-                TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\" + fileName + ".txt");
 
-                for (int n = 0; n < richTextBox1.Lines.Length; ++n)
+                if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    writer.WriteLine(richTextBox1.Lines[n]);
-                }
+                    StreamWriter writer = new StreamWriter(saveFileDialog1.FileName);
+                        for (int n = 0; n < richTextBox1.Lines.Length; n++)
+                        {
+                            writer.WriteLine(richTextBox1.Lines[n]);
+                        }
 
-                for (int n = 0; n < outputRichTextBox.Lines.Length; ++n)
+                        for (int n = 0; n < outputRichTextBox.Lines.Length; n++)
+                        {
+                           writer.WriteLine(outputRichTextBox.Lines[n]);
+                        }
+                    }
+                else
                 {
-                    writer.WriteLine(outputRichTextBox.Lines[n]);
+                    MessageBox.Show("Save Textbox is Empty!!", "Error", MessageBoxButtons.OK);
                 }
-
-                writer.Close();
             }
             else
             {
-                MessageBox.Show("Output Textbox is Empty!!", "Error", MessageBoxButtons.OK);
+                  MessageBox.Show("Save Textbox is Empty!!", "Error", MessageBoxButtons.OK);
             }
+            
         }
 
         //Export Button that saves all info of the converted file into a txt file
@@ -817,16 +827,26 @@ namespace ExeToCilForm
         {
             if (outputRichTextBox.Text != String.Empty)
             {
-                string fileName = Interaction.InputBox("Save File", "Name the File", "", -1, -1);
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.InitialDirectory = @"C:\";
+                saveFileDialog1.Title = "Save text Files";
+                saveFileDialog1.DefaultExt = "txt";
+                saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
 
-                TextWriter writer = new StreamWriter(@"C:\\Users\\magic\\Desktop\\Repeat Project\\" + fileName + ".txt");
 
-                for (int n = 0; n < outputRichTextBox.Lines.Length; ++n)
+                if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    writer.WriteLine(outputRichTextBox.Lines[n]);
-                }
 
-                writer.Close();
+                    using (TextWriter writer = new StreamWriter(saveFileDialog1.FileName))
+                        for (int n = 0; n < outputRichTextBox.Lines.Length; n++)
+                        {
+                            writer.WriteLine(outputRichTextBox.Lines[n]);
+                        }
+                }
+                else
+                {
+                    MessageBox.Show("Save Textbox is Empty!!", "Error", MessageBoxButtons.OK);
+                }
             }
             else
             {
